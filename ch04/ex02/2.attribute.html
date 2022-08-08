@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset='UTF-8'>
+        <title>input attribute</title>
+    </head>
+    <body>
+        <form>
+            <input type='text' name='userId' id='userId' size='15'/> <br>
+            <input type='text' value='how' readonly/> <br>
+            <input type='text' placeholder='이름'/><br>
+            <input type='text' autofocus/><br>
+            <!--입력 자체를 제한, required 사용 시 submit 하면 입력상태 확인-->
+            <input type='text' minlength='3' maxlength='5' required/><br>
+            <!--입력 범위를 초과하여 submit하면 에러 메세지 출력-->
+            <input type='number' min='1' max='6' step='2'/><br>
+            <input type='date' min='2022-08-01' max='2022-08-03'/><br>
+            <input type='time' min='09:00' max='13:00'/><br>
+            
+            <input type='submit' value='전송'/>
+            <input type='submit' formaction='#' formmethod='post' formtarget='msg'/> <br>
+            <!--multiple 파일을 다중으로 올릴 수 있다.-->
+            <input type='file' multiple/>
+        </form>
+    </body>
+</html>
